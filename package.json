@@ -1,0 +1,19 @@
+{
+  "name": "pricing-model",
+  "version": "1.0.0",
+  "description": "This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2",
+    "serverless-plugin-simulate": "0.0.17",
+    "serverless-python-requirements": "^5.1.1"
+  }
+}

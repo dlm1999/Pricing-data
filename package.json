@@ -1,19 +1,39 @@
 {
-  "name": "pricing-model",
+  "name": "vegetable-prices",
   "version": "1.0.0",
-  "description": "This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
+  "description": "Simple NodeJS Rest API with CRUD routes. Using SQLite database",
+  "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec babel-node server.js",
+    "dev": "nodemon server.js"
   },
-  "author": "",
+  "author": "Mohan Gudey",
   "license": "ISC",
   "dependencies": {
-    "request": "^2.88.2",
-    "serverless-plugin-simulate": "0.0.17",
-    "serverless-python-requirements": "^5.1.1"
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.9.5",
+    "ajv": "^5.0.0",
+    "aws-sdk": "^2.897.0",
+    "body-parser": "^1.17.1",
+    "cheerio": "^1.0.0-rc.10",
+    "cors": "^2.8.5",
+    "fs": "0.0.1-security",
+    "jayschema": "^0.3.1",
+    "nodemon": "^2.0.3",
+    "request": "2.88.2",
+    "request-promise": "^4.2.6",
+    "table-scraper": "^1.0.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.9.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "nodemon": "^2.0.3"
   }
 }

@@ -32,6 +32,5 @@ module.exports.getCommodityPricesFromWeb = async (event) => {
         records.forEach( rec => 
         	putRecord(rec)	
         )
-      }
-    });
+      });
 };

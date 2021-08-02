@@ -42,7 +42,8 @@ module.exports.getCommodityPricesFromWeb = async (event, context, callback) => {
                     TableName: process.env.PRICES_DYNAMODB_TABLE,
                     Item: {
                         id: uuid.v4(),
-                        record: rec
+                        record: rec,
+                        date : new Date().toISOString()
                     }
                 };
                 product_result.push(
